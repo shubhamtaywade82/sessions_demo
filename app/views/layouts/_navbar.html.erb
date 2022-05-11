@@ -1,0 +1,9 @@
+<%= link_to 'Home', root_path %>
+<% if logged_in? %>
+  <%= link_to 'Logout', logout_path %>
+<% else %>
+  <%= link_to 'Login', new_session_path %> OR 
+  <%= link_to 'SignUp', new_registration_path %>
+<% end %>
+
+<br>
